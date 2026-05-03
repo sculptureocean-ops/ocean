@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-brand-bg: #f5f4ef;
+  --color-brand-text: #111111;
+  --color-brand-gray: #4a4a4a;
+  --color-brand-border: #dcdcdc;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-brand-bg text-brand-text;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    /* Main headings usually sans, but secondary headings serif */
+    @apply tracking-tight;
+  }
+}
+
+/* Utilities for GSAP reveal states */
+.invisible-on-load {
+  visibility: hidden;
+}
