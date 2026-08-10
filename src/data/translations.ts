@@ -76,9 +76,9 @@ export const content = {
         },
         {
           num: "02",
-          title: "Cervical Cancer Vaccination Awareness",
+          title: "Cervical Cancer Vaccination and  Awareness",
           badge: "HPV Prevention",
-          description: "Our second area of work is cervical cancer vaccination awareness. Prevention does not begin with screening alone. We aim to create greater awareness among individuals, families, and communities about the importance of HPV vaccination and its role in cervical cancer prevention.",
+          description: "Our second area of work is cervical cancer vaccination and awareness. Prevention does not begin with screening alone. We aim to create greater awareness among individuals, families, and communities about the importance of HPV vaccination and its role in cervical cancer prevention.",
           subdesc: "Through education and awareness initiatives, we hope to address misconceptions, improve understanding, and encourage people to make informed decisions about vaccination and preventive health."
         },
         {
@@ -91,9 +91,16 @@ export const content = {
         {
           num: "04",
           title: "Health Education through Accessible Literature",
-          badge: "Medical Literature by Dr. Ashish Singh",
+          badge: "Featured Publication by Dr. Ashish Singh",
+          isFeatured: true,
           description: "Our fourth area of work is health education through accessible medical literature. One of the founders of OCEAN SCULPTURE, Dr. Ashish Singh, has authored a book created specifically for women who are pregnant or planning pregnancy, with the aim of making pregnancy-related information easier to understand.",
-          subdesc: "The book provides a comprehensive journey from pre-pregnancy through pregnancy, childbirth, breastfeeding, and newborn care, covering important aspects such as preparation for pregnancy, the birthing process, recommended scans, and stages of pregnancy. It addresses common questions and concerns in simple, understandable language rather than complicated medical terminology to help women and families feel informed, confident, and prepared."
+          subdesc: "The book provides a comprehensive journey from pre-pregnancy through pregnancy, childbirth, breastfeeding, and newborn care, covering important aspects such as preparation for pregnancy, the birthing process, recommended scans, and stages of pregnancy. It addresses common questions and concerns in simple, understandable language rather than complicated medical terminology to help women and families feel informed, confident, and prepared.",
+          highlights: [
+            "Pre-pregnancy preparation & recommended scans",
+            "Pregnancy stages, birthing process & childbirth",
+            "Postpartum, breastfeeding & newborn care",
+            "Simple, plain language avoiding complex medical jargon"
+          ]
         }
       ],
 
@@ -232,9 +239,16 @@ export const content = {
         {
           num: "04",
           title: "सुलभ साहित्य के माध्यम से स्वास्थ्य शिक्षा",
-          badge: "चिकित्सा पुस्तक - डॉ. आशीष सिंह",
+          badge: "डॉ. आशीष सिंह द्वारा विशेष पुस्तक",
+          isFeatured: true,
           description: "हमारा चौथा कार्य क्षेत्र सुलभ चिकित्सा साहित्य के माध्यम से स्वास्थ्य शिक्षा है। ओशियन स्कल्पचर के संस्थापकों में से एक, डॉ. आशीष सिंह ने विशेष रूप से उन महिलाओं के लिए एक पुस्तक लिखी है जो गर्भवती हैं या गर्भावस्था की योजना बना रही हैं, जिसका उद्देश्य गर्भावस्था से संबंधित जानकारी को समझना आसान बनाना है।",
-          subdesc: "यह पुस्तक गर्भावस्था पूर्व से लेकर गर्भावस्था, प्रसव, स्तनपान और नवजात शिशु की देखभाल तक की एक व्यापक यात्रा प्रदान करती है। यह जटिल चिकित्सा शब्दावली के बजाय सरल, समझने योग्य भाषा में सामान्य प्रश्नों और चिंताओं को संबोधित करती है ताकि महिलाओं और परिवारों को सूचित, आत्मविश्वासी और तैयार महसूस करने में मदद मिल सके।"
+          subdesc: "यह पुस्तक गर्भावस्था पूर्व से लेकर गर्भावस्था, प्रसव, स्तनपान और नवजात शिशु की देखभाल तक की एक व्यापक यात्रा प्रदान करती है। यह जटिल चिकित्सा शब्दावली के बजाय सरल, समझने योग्य भाषा में सामान्य प्रश्नों और चिंताओं को संबोधित करती है ताकि महिलाओं और परिवारों को सूचित, आत्मविश्वासी और तैयार महसूस करने में मदद मिल सके।",
+          highlights: [
+            "गर्भावस्था पूर्व की तैयारी और अनुशंसित स्कैन",
+            "गर्भावस्था के चरण, प्रसव प्रक्रिया और शिशु जन्म",
+            "प्रसवोत्तर, स्तनपान और नवजात शिशु की देखभाल",
+            "जटिल चिकित्सा शब्दावली से मुक्त सरल एवं सुलभ भाषा"
+          ]
         }
       ],
 

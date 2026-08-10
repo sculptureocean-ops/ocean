@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "../context/LanguageContext";
 import { content } from "../data/translations";
-import { Briefcase, Syringe, Smartphone, BookOpen, HeartPulse, Mail } from "lucide-react";
+import { Briefcase, Syringe, Smartphone, BookOpen, HeartPulse, Mail, CheckCircle2, Sparkles } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +16,7 @@ export function OurWork() {
     <HeartPulse className="w-6 h-6 text-rose-600" />,
     <Syringe className="w-6 h-6 text-blue-600" />,
     <Smartphone className="w-6 h-6 text-emerald-600" />,
-    <BookOpen className="w-6 h-6 text-purple-600" />
+    <BookOpen className="w-6 h-6 text-purple-700" />
   ];
 
   useEffect(() => {
@@ -64,39 +64,79 @@ export function OurWork() {
 
         {/* Initiatives Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {t.initiatives.map((item, idx) => (
-            <div 
-              key={idx}
-              className="work-fade-up bg-brand-bg/40 p-8 rounded-3xl border border-brand-border/60 hover:border-brand-text/40 transition-all shadow-xs space-y-6 flex flex-col justify-between"
-            >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className="text-3xl font-sans font-black text-brand-border">
-                    {item.num}
-                  </span>
-                  <span className="px-3 py-1 bg-white text-brand-text font-sans font-bold text-xs rounded-full border border-brand-border/60 shadow-2xs">
-                    {item.badge}
-                  </span>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <div className="p-2.5 bg-white rounded-xl shadow-2xs border border-brand-border/40 shrink-0">
-                    {icons[idx]}
+          {t.initiatives.map((item, idx) => {
+            const isFeatured = 'isFeatured' in item && item.isFeatured;
+            
+            return (
+              <div 
+                key={idx}
+                className={`work-fade-up p-8 rounded-3xl transition-all shadow-xs space-y-6 flex flex-col justify-between relative overflow-hidden ${
+                  isFeatured 
+                    ? "bg-linear-to-br from-purple-50 via-rose-50/40 to-amber-50/60 border-2 border-purple-300 shadow-md hover:border-purple-500" 
+                    : "bg-brand-bg/40 border border-brand-border/60 hover:border-brand-text/40"
+                }`}
+              >
+                {/* Featured Ribbon Badge */}
+                {isFeatured && (
+                  <div className="absolute top-0 right-0 bg-purple-700 text-white px-4 py-1 rounded-bl-2xl font-sans text-[11px] font-bold uppercase tracking-wider flex items-center space-x-1 shadow-sm">
+                    <Sparkles className="w-3 h-3 text-amber-300 fill-amber-300" />
+                    <span>Featured Medical Book</span>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-sans font-bold text-brand-text leading-snug">
-                    {item.title}
-                  </h3>
-                </div>
+                )}
 
-                <p className="text-base font-serif text-brand-gray leading-relaxed">
-                  {item.description}
-                </p>
-                <p className="text-sm font-serif text-brand-gray/90 leading-relaxed border-t border-brand-border/40 pt-4">
-                  {item.subdesc}
-                </p>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className={`text-3xl font-sans font-black ${isFeatured ? "text-purple-300" : "text-brand-border"}`}>
+                      {item.num}
+                    </span>
+                    <span className={`px-3 py-1 font-sans font-bold text-xs rounded-full shadow-2xs border ${
+                      isFeatured 
+                        ? "bg-purple-100 text-purple-900 border-purple-200" 
+                        : "bg-white text-brand-text border-brand-border/60"
+                    }`}>
+                      {item.badge}
+                    </span>
+                  </div>
+
+                  <div className="flex items-start space-x-3">
+                    <div className={`p-2.5 rounded-xl shadow-2xs border shrink-0 ${
+                      isFeatured ? "bg-purple-100 border-purple-200" : "bg-white border-brand-border/40"
+                    }`}>
+                      {icons[idx]}
+                    </div>
+                    <h3 className="text-xl md:text-2xl font-sans font-bold text-brand-text leading-snug">
+                      {item.title}
+                    </h3>
+                  </div>
+
+                  <p className="text-base font-serif text-brand-gray leading-relaxed">
+                    {item.description}
+                  </p>
+
+                  <p className="text-sm font-serif text-brand-gray/90 leading-relaxed border-t border-brand-border/40 pt-4">
+                    {item.subdesc}
+                  </p>
+
+                  {/* Highlighted Book Features List */}
+                  {'highlights' in item && Array.isArray(item.highlights) && (
+                    <div className="pt-3 space-y-2 border-t border-purple-200/80">
+                      <p className="text-xs font-sans font-bold text-purple-900 uppercase tracking-wider">
+                        Key Book Focus & Coverage:
+                      </p>
+                      <div className="grid grid-cols-1 gap-2">
+                        {item.highlights.map((h, hIdx) => (
+                          <div key={hIdx} className="flex items-center space-x-2 text-xs font-sans font-medium text-purple-950">
+                            <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0" />
+                            <span>{h}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Ecosystem & Commitment Summary Banner */}
