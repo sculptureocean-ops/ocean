@@ -69,7 +69,7 @@ export const content = {
       initiatives: [
         {
           num: "01",
-          title: "Free & Subsidised Cervical Cancer Screening",
+          title: "Cervical Cancer Screening and treatment",
           badge: "Sashakti Collaboration",
           description: "Our first initiative is our collaboration with the Sashakti Foundation, an organisation working towards women's welfare and empowerment. Together, we are taking a meaningful step towards improving access to cervical cancer screening by initiating free OPD consultations by the Sashakti Foundation and cervical cancer screening services for women who may otherwise face barriers to accessing such care.",
           subdesc: "Alongside this initiative, OCEAN SCULPTURE aims to make cervical cancer screening available at subsidised rates, with the goal of reducing the financial burden associated with screening and encouraging more women to undergo timely preventive healthcare. We believe that the cost of screening should never become a reason for a woman to delay or avoid protecting her health."
