@@ -1,0 +1,17 @@
+{
+  "name": "OCEAN SCULPTURE | Empowering Women's Health",
+  "short_name": "OceanSculpture",
+  "description": "OCEAN SCULPTURE is dedicated to empowering women through awareness, early detection, and preventive healthcare in collaboration with Sashakti Foundation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

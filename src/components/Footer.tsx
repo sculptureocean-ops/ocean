@@ -32,6 +32,7 @@ export function Footer() {
             <a 
               href={`mailto:${t.email}`}
               className="inline-flex items-center space-x-2.5 text-brand-text font-sans font-semibold hover:text-rose-600 transition-colors text-base"
+              aria-label={`Send email to ${t.email}`}
             >
               <Mail className="w-4 h-4 text-rose-600 shrink-0" />
               <span>{t.email}</span>

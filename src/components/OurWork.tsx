@@ -168,6 +168,7 @@ export function OurWork() {
               <a 
                 href="mailto:sculptureocean@gmail.com"
                 className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-full bg-white text-brand-text font-sans font-bold text-sm hover:bg-rose-50 transition-all shadow-md active:scale-95 shrink-0"
+                aria-label="Send email to sculptureocean@gmail.com"
               >
                 <Mail className="w-4 h-4 text-rose-600" />
                 <span>sculptureocean@gmail.com</span>

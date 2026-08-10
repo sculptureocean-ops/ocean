@@ -50,6 +50,7 @@ export function NavBar() {
             onClick={toggleLanguage}
             className="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-brand-text/30 bg-white/60 hover:bg-white text-xs font-sans font-semibold text-brand-text transition-all shadow-sm active:scale-95"
             title="Switch Language"
+            aria-label="Toggle language between English and Hindi"
           >
             <Globe className="w-3.5 h-3.5 text-brand-text" />
             <span>{t.languageToggle}</span>

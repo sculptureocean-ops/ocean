@@ -42,6 +42,8 @@ export function Hero() {
         <span className="mr-3 font-medium">{t.availabilityLabel}</span>
         <button 
           onClick={() => setLanguage('en')} 
+          aria-label="Switch language to English"
+          title="English"
           className={`px-2 py-0.5 rounded transition-all ${
             language === 'en' 
               ? 'text-brand-text font-bold border-b-2 border-brand-text' 
@@ -53,6 +55,8 @@ export function Hero() {
         <span className="mx-3 text-brand-border">|</span>
         <button 
           onClick={() => setLanguage('hi')} 
+          aria-label="Switch language to Hindi"
+          title="हिंदी (Hindi)"
           className={`px-2 py-0.5 rounded transition-all ${
             language === 'hi' 
               ? 'text-brand-text font-bold border-b-2 border-brand-text' 
@@ -92,6 +96,10 @@ export function Hero() {
         <img 
           src="/sashakti-ocean-sculpture-collaboration.png" 
           alt={t.bannerAlt}
+          loading="eager"
+          decoding="async"
+          width="1200"
+          height="675"
           className="w-full h-auto object-contain rounded-lg"
         />
       </div>

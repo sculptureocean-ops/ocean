@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { LanguageProvider } from "./context/LanguageContext";
+import { SeoHead } from "./components/SeoHead";
 import { NavBar } from "./components/NavBar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
@@ -15,6 +16,7 @@ function MainContent() {
 
   return (
     <main className="w-full min-h-screen bg-brand-bg text-brand-text selection:bg-brand-text selection:text-brand-bg antialiased">
+      <SeoHead />
       <NavBar />
       <Hero />
       <About />

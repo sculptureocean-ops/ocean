@@ -1,0 +1,6 @@
+# User-agent rules for OCEAN SCULPTURE Website
+User-agent: *
+Allow: /
+
+# Sitemap URL
+Sitemap: https://oceansculpture.org/sitemap.xml
