@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap URL
-Sitemap: https://oceansculpture.org/sitemap.xml
+Sitemap: https://www.oceansculpture.co/sitemap.xml

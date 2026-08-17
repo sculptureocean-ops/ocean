@@ -12,7 +12,7 @@ export function SeoHead() {
     if (language === "hi") {
       document.title = "ओशियन स्कल्पचर (oceansculpture) | महिला स्वास्थ्य, सर्वाइकल कैंसर जागरूकता और रोकथाम";
     } else {
-      document.title = "OCEAN SCULPTURE (oceansculpture.org) | Empowering Women's Healthcare & Cervical Cancer Prevention";
+      document.title = "OCEAN SCULPTURE (oceansculpture.co) | Empowering Women's Healthcare & Cervical Cancer Prevention";
     }
 
     // 3. Update dynamic meta description
