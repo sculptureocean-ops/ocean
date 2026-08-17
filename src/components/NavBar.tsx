@@ -21,13 +21,20 @@ export function NavBar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
         
         {/* Brand Logo */}
-        <a href="#" className="flex flex-col">
-          <span className="text-xl md:text-2xl font-serif font-bold tracking-tight text-brand-text">
-            OCEAN SCULPTURE
-          </span>
-          <span className="text-[10px] tracking-wider font-sans font-semibold text-brand-gray/80 uppercase">
-            {language === 'en' ? 'United for Women' : 'महिलाओं के लिए एकजुट'}
-          </span>
+        <a href="#" className="flex items-center space-x-3 group">
+          <img 
+            src="/image.png" 
+            alt="OCEAN SCULPTURE Logo" 
+            className="h-9 w-auto object-contain transition-transform group-hover:scale-105" 
+          />
+          <div className="flex flex-col">
+            <span className="text-xl md:text-2xl font-serif font-bold tracking-tight text-brand-text">
+              OCEAN SCULPTURE
+            </span>
+            <span className="text-[10px] tracking-wider font-sans font-semibold text-brand-gray/80 uppercase">
+              {language === 'en' ? 'United for Women' : 'महिलाओं के लिए एकजुट'}
+            </span>
+          </div>
         </a>
 
         {/* Desktop Navigation Links */}

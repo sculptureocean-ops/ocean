@@ -13,9 +13,16 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 pb-10 border-b border-brand-border/40">
           
           <div className="space-y-2">
-            <h2 className="text-2xl font-serif text-brand-text font-bold tracking-tight">
-              {t.brand}
-            </h2>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/image.png" 
+                alt="OCEAN SCULPTURE Logo" 
+                className="h-9 w-auto object-contain" 
+              />
+              <h2 className="text-2xl font-serif text-brand-text font-bold tracking-tight">
+                {t.brand}
+              </h2>
+            </div>
             <p className="text-sm font-sans text-rose-700 font-medium">
               {t.tagline}
             </p>
