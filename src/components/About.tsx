@@ -3,7 +3,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "../context/LanguageContext";
 import { content } from "../data/translations";
-import { HeartHandshake, ShieldCheck, CheckCircle2, Award, UserCheck } from "lucide-react";
+import { HeartHandshake, ShieldCheck, CheckCircle2, Award, UserCheck, BookOpenCheck, Activity, HandHeart } from "lucide-react";
+import { renderWithSashaktiLink } from "./SashaktiLink";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,11 +61,11 @@ export function About() {
               {t.p1}
             </p>
             <p>{t.p2}</p>
-            <p>{t.p3}</p>
+            <p>{renderWithSashaktiLink(t.p3)}</p>
           </div>
 
           <div className="about-fade-up space-y-6 text-base md:text-lg font-serif text-brand-gray leading-relaxed bg-brand-bg/50 p-8 rounded-2xl border border-brand-border/40">
-            <p>{t.p4}</p>
+            <p>{renderWithSashaktiLink(t.p4)}</p>
             
             {/* Action highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 font-sans text-sm">
@@ -86,6 +87,47 @@ export function About() {
           </div>
         </div>
 
+        {/* Three Pillars Section */}
+        {t.pillars && (
+          <div className="about-fade-up space-y-8 pt-4">
+            <div className="text-center max-w-2xl mx-auto space-y-2">
+              <span className="text-xs font-sans font-bold tracking-[0.2em] text-rose-600 uppercase">
+                {t.pillarsTag}
+              </span>
+              <h3 className="text-2xl md:text-3xl font-sans font-black tracking-tight text-[#2a2f35] uppercase">
+                {t.pillarsHeading}
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {t.pillars.map((pillar, idx) => {
+                const pillarIcons = [
+                  <BookOpenCheck key={0} className="w-6 h-6 text-rose-600" />,
+                  <Activity key={1} className="w-6 h-6 text-emerald-600" />,
+                  <HandHeart key={2} className="w-6 h-6 text-amber-600" />
+                ];
+                
+                return (
+                  <div 
+                    key={idx}
+                    className="bg-brand-bg/60 p-7 rounded-2xl border border-brand-border/60 space-y-4 hover:border-rose-400/50 hover:shadow-md transition-all duration-300 group"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-2xs border border-brand-border/40 group-hover:scale-105 transition-transform">
+                      {pillarIcons[idx % pillarIcons.length]}
+                    </div>
+                    <h4 className="text-lg font-sans font-bold text-brand-text group-hover:text-rose-700 transition-colors">
+                      {pillar.title}
+                    </h4>
+                    <p className="text-sm font-serif text-brand-gray leading-relaxed">
+                      {pillar.desc}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Collaboration Spotlight Card */}
         <div className="about-fade-up bg-linear-to-br from-[#111111] to-[#2a2f35] text-white p-8 md:p-14 rounded-3xl shadow-xl space-y-8 relative overflow-hidden">
           <div className="relative z-10 space-y-6">
@@ -94,14 +136,14 @@ export function About() {
             </span>
             
             <h3 className="text-2xl md:text-4xl font-sans font-black tracking-tight uppercase">
-              {t.collabTitle}
+              {renderWithSashaktiLink(t.collabTitle, "text-white underline hover:text-rose-300 transition-colors inline-flex items-center gap-1")}
             </h3>
 
             <p className="text-lg font-serif text-gray-200 leading-relaxed max-w-4xl">
-              {t.collabP1}
+              {renderWithSashaktiLink(t.collabP1, "text-rose-300 hover:text-rose-200 underline font-semibold transition-colors inline-flex items-center gap-1")}
             </p>
             <p className="text-base md:text-lg font-serif text-gray-300 leading-relaxed max-w-4xl">
-              {t.collabP2}
+              {renderWithSashaktiLink(t.collabP2, "text-rose-300 hover:text-rose-200 underline font-semibold transition-colors inline-flex items-center gap-1")}
             </p>
 
             <div className="pt-4 space-y-3">
@@ -159,6 +201,23 @@ export function About() {
             </p>
           </div>
         </div>
+
+        {/* Impact & Vision Card */}
+        {t.impactP1 && (
+          <div className="about-fade-up bg-linear-to-br from-rose-50/70 via-white to-amber-50/50 p-8 md:p-12 rounded-3xl border border-rose-200/80 shadow-xs space-y-6 max-w-4xl mx-auto text-center">
+            <span className="text-xs font-sans font-bold tracking-[0.2em] text-rose-700 uppercase">
+              {t.impactTag}
+            </span>
+            <div className="space-y-4 max-w-3xl mx-auto">
+              <p className="text-base md:text-lg font-serif text-brand-text leading-relaxed">
+                {t.impactP1}
+              </p>
+              <p className="text-lg md:text-xl font-sans font-bold text-[#2a2f35] leading-relaxed pt-4 border-t border-rose-200/60">
+                "{t.impactP2}"
+              </p>
+            </div>
+          </div>
+        )}
 
         {/* Promise Banner */}
         <div className="about-fade-up bg-brand-bg text-center p-8 md:p-12 rounded-2xl border border-brand-border/60 space-y-3">

@@ -11,8 +11,8 @@ export const content = {
       search: "Search"
     },
     hero: {
-      badge: "UNITED FOR WOMEN. UNITED AGAINST CERVICAL CANCER.",
-      title: "Screen Early. Detect Early. Prevent Cervical Cancer.",
+      badge: "UNITED FOR WOMEN. UNITED FOR BETTER HEALTH.",
+      title: "Screen Early. Detect Early.",
       subtitle: "OCEAN SCULPTURE is a purpose-driven initiative built around a simple belief: prevention should be accessible to every woman.",
       availabilityLabel: "This page is available in:",
       bannerAlt: "Sashakti Foundation and Ocean Sculpture collaboration banner for cervical cancer screening",
@@ -20,11 +20,28 @@ export const content = {
     },
     about: {
       sectionTag: "ABOUT US",
-      heading: "United for Women. United Against Cervical Cancer.",
-      p1: "OCEAN SCULPTURE is a purpose-driven initiative built around a simple belief: prevention should be accessible to every woman.",
-      p2: "We are working towards a future where women are empowered with the knowledge, opportunity, and access they need to protect their health—before disease becomes life-threatening.",
-      p3: "Our journey begins with cervical cancer prevention and screening. Cervical cancer is one of the few cancers where prevention and early detection can make a profound difference. Yet, awareness, accessibility, affordability, and misconceptions continue to prevent many women from seeking timely screening. We want to change that.",
-      p4: "Our aim is to promote awareness, encourage regular screening, support early detection, and make quality cervical cancer screening available at subsidised rates. We also believe strongly in the importance of HPV vaccination as a key component of cervical cancer prevention.",
+      heading: "UNITED FOR WOMEN. UNITED FOR BETTER HEALTH.",
+      p1: "At Ocean Sculpture, we are dedicated to women, society, and the overall growth and empowerment of our nation.",
+      p2: "Our vision is to contribute to a healthier and stronger society by making essential healthcare more accessible, affordable, and inclusive.",
+      p3: "We are proud to announce our first project in collaboration with Shashakti Foundation, focused on making cervical cancer screening more accessible to women. Through this initiative, we aim to reduce the cost of testing and make screening more affordable and easily accessible, particularly for women who face barriers to preventive healthcare.",
+      p4: "This first project marks an important step in our journey toward women’s empowerment, community well-being, and social development. At Ocean Sculpture, we believe that investing in women’s health is an investment in the growth, progress, and development of the nation.",
+
+      pillarsTag: "OUR THREE PILLARS",
+      pillarsHeading: "Our approach is built around three key pillars:",
+      pillars: [
+        {
+          title: "Awareness & Education",
+          desc: "Creating awareness, sharing knowledge, and empowering individuals to make informed decisions."
+        },
+        {
+          title: "Prevention & Early Action",
+          desc: "Promoting preventive approaches and encouraging timely action before problems become life-threatening or difficult to address."
+        },
+        {
+          title: "Accessibility & Affordability",
+          desc: "Working towards making quality services, opportunities, and solutions more accessible and affordable for society."
+        }
+      ],
       
       collabTag: "CREATING ACCESS THROUGH COLLABORATION",
       collabTitle: "Collaboration with Sashakti Foundation",
@@ -37,19 +54,23 @@ export const content = {
         "It is about making prevention possible."
       ],
 
+      impactTag: "OUR IMPACT & VISION",
+      impactP1: "Through our initiatives, including our work in women’s health and cervical cancer prevention, OCEAN SCULPTURE aims to build partnerships, support innovation, and create sustainable solutions that contribute to the well-being, empowerment, growth, and development of society and the nation.",
+      impactP2: "Our vision is simple: create meaningful impact today for a healthier, empowered, and more inclusive tomorrow.",
+
       promiseTag: "OUR PROMISE",
-      promiseTitle: "Screen Early. Detect Early. Prevent Cervical Cancer.",
+      promiseTitle: "Screen Early. Detect Early.",
       promiseDesc: "Because no woman should lose her life to a disease that can be prevented or detected early."
     },
     inspiration: {
       sectionTag: "OUR INSPIRATION",
-      heading: "Inspired by Those Who Taught Us. Driven by Those We Serve.",
-      p1: "Every meaningful journey begins with someone who inspires us. For us at OCEAN SCULPTURE, that inspiration comes from our teachers, mentors, and clinical supervisors—the people who taught us not only the science of medicine, but also the importance of listening, learning, questioning, and caring for every patient.",
-      p2: "Our understanding of cervical cancer screening was shaped by these experiences. During our clinical learning, we realised how important it is to understand a woman's cervical health history, risk factors, screening needs, and access to preventive care. What may seem like a simple screening decision can have a profound impact on a woman's life.",
-      p3: "We also saw a much larger gap around us. Whether in rural or urban communities, many women still have limited understanding of cervical cancer, its prevention, screening, and the importance of early detection. This gap in awareness became more than a clinical observation for us—it became a reason to act.",
-      p4: "One of our greatest inspirations has been our clinical supervisor, whose teaching and commitment showed us the importance of looking beyond the disease and understanding the person behind the patient. Her guidance gave us the confidence and motivation to think differently and work towards creating something that could make a meaningful difference.",
-      p5: "We are equally inspired by the people who have dedicated decades of their lives to women's healthcare and cervical cancer prevention. Seeing teachers and healthcare professionals who continue to work with dedication even after decades in medicine reminds us that meaningful change requires persistence, humility, and continuous learning.",
-      p6: "Their journey reminds us that we do not need to change the world overnight. We simply need to keep moving forward, keep learning, and keep doing what we can. That is the spirit behind OCEAN SCULPTURE.",
+      heading: "The Inspiration Behind OCEAN SCULPTURE",
+      p1: "Every meaningful journey begins with a thought—a thought to give our best, to serve others, and to contribute towards something greater than ourselves.",
+      p2: "OCEAN SCULPTURE was born from this simple yet powerful belief: that our knowledge, skills, resources, and efforts should be used to create meaningful value for people and society. Our inspiration comes from the individuals who have guided us, the experiences that have shaped us, and the everyday challenges that remind us of the need to do better.",
+      p3: "We believe that progress is created through innovation, responsibility, compassion, collaboration, and continuous learning. Our purpose is not limited to one field or one area of work. We aspire to explore and support initiatives that contribute to health, education, technology, social development, accessibility, and human well-being.",
+      p4: "Our journey is guided by a commitment to serve from the individual to the community, and from the community to the nation. We believe that even small, meaningful efforts can create a larger impact when they are driven by sincerity and a long-term vision.",
+      p5: "At OCEAN SCULPTURE, we are committed to giving our best, creating opportunities, supporting meaningful solutions, and contributing to the growth, empowerment, and development of society and the nation.",
+      p6: "Our inspiration is simple: to serve with purpose, create with responsibility, and remain committed to building a better tomorrow.",
       
       quote: [
         "Our teachers gave us knowledge.",
@@ -69,36 +90,42 @@ export const content = {
       initiatives: [
         {
           num: "01",
-          title: "Cervical Cancer Screening and treatment",
+          title: "Cervical Cancer Laboratory Testing",
           badge: "Sashakti Collaboration",
-          description: "Our first initiative is our collaboration with the Sashakti Foundation, an organisation working towards women's welfare and empowerment. Together, we are taking a meaningful step towards improving access to cervical cancer screening by initiating free OPD consultations by the Sashakti Foundation and cervical cancer screening services for women who may otherwise face barriers to accessing such care.",
-          subdesc: "Alongside this initiative, OCEAN SCULPTURE aims to make cervical cancer screening available at subsidised rates, with the goal of reducing the financial burden associated with screening and encouraging more women to undergo timely preventive healthcare. We believe that the cost of screening should never become a reason for a woman to delay or avoid protecting her health."
+          description: "Our first initiative is a collaboration between OCEAN SCULPTURE and Sashakti Foundation to make cervical cancer laboratory testing more accessible and affordable.",
+          subdesc: "Through this collaboration, Sashakti Foundation provides Free Cervical Cancer Screening OPD consultations, while OCEAN SCULPTURE supports access to high-quality laboratory testing at reduced and subsidised rates.",
+          extra: "Our shared aim is to reduce the financial barriers to screening and encourage more women to take timely preventive care.",
+          tagline: "Because affordability should never stand in the way of early detection and prevention."
         },
         {
           num: "02",
-          title: "Cervical Cancer Vaccination and  Awareness",
+          title: "Cervical Cancer Vaccination and Awareness",
           badge: "HPV Prevention",
-          description: "Our second area of work is cervical cancer vaccination and awareness. Prevention does not begin with screening alone. We aim to create greater awareness among individuals, families, and communities about the importance of HPV vaccination and its role in cervical cancer prevention.",
-          subdesc: "Through education and awareness initiatives, we hope to address misconceptions, improve understanding, and encourage people to make informed decisions about vaccination and preventive health."
+          description: "Prevention begins before disease develops. Our second area of work focuses on HPV vaccination and awareness, an important part of cervical cancer prevention.",
+          subdesc: "Through OCEAN SCULPTURE Vaccination Centres and vaccination services available through Sashakti Foundation OPDs, we aim to make HPV vaccination more accessible while creating awareness among individuals, families, and communities.",
+          extra: "Alongside vaccination, we work to address misconceptions and provide clear, evidence-based information so that people can make informed decisions about vaccination and preventive health.",
+          tagline: "Vaccinate. Educate. Prevent. Protect."
         },
         {
           num: "03",
           title: "Digital Health & Accessible Healthcare Technology",
           badge: "Healthcare App",
-          description: "Our third area of work is digital health and accessible healthcare technology. We have developed a health application designed to bring multiple aspects of healthcare together on one accessible platform.",
-          subdesc: "The application is envisioned to support both pregnant and non-pregnant individuals, including personalised diet charts and health guidance. It is designed to be available at a much more affordable cost than many conventional personalised services. Our objective is to use technology not simply to provide information, but to make reliable health guidance more accessible to people in their everyday lives."
+          description: "Through the OCEAN SCULPTURE health application, we aim to make reliable and affordable healthcare guidance easily accessible.",
+          subdesc: "The app provides personalised diet charts and health guidance across different areas, with a special focus on pregnancy and women’s health—helping women make informed choices and supporting a healthier pregnancy journey.",
+          tagline: "Technology for better health. Guidance for every stage."
         },
         {
           num: "04",
-          title: "Health Education through Accessible Literature",
-          badge: "Featured Publication by Dr. Ashish Singh",
+          title: "From the Thought of Conception to Birth: The Journey of a Mother and a Baby",
+          badge: "Featured Publication by 10+ Global Doctors",
           isFeatured: true,
-          description: "Our fourth area of work is health education through accessible medical literature. One of the founders of OCEAN SCULPTURE, Dr. Ashish Singh, has authored a book created specifically for women who are pregnant or planning pregnancy, with the aim of making pregnancy-related information easier to understand.",
-          subdesc: "The book provides a comprehensive journey from pre-pregnancy through pregnancy, childbirth, breastfeeding, and newborn care, covering important aspects such as preparation for pregnancy, the birthing process, recommended scans, and stages of pregnancy. It addresses common questions and concerns in simple, understandable language rather than complicated medical terminology to help women and families feel informed, confident, and prepared.",
+          description: "Written by more than 10 doctors and medical experts from four different countries, From the Thought of Conception to Birth: The Journey of a Mother and a Baby is a complete, patient-friendly pregnancy guide created to support women and families throughout the pregnancy journey.",
+          subdesc: "The book covers pre-pregnancy preparation, trimester-wise care, important scans and investigations, childbirth, postpartum recovery, breastfeeding, and newborn care, explained in simple and easy-to-understand language.",
+          extra: "Our aim is to make reliable medical knowledge accessible, practical, and reassuring, helping every mother feel informed, confident, and prepared from the thought of conception to the birth of her baby.",
           highlights: [
-            "Pre-pregnancy preparation & recommended scans",
-            "Pregnancy stages, birthing process & childbirth",
-            "Postpartum, breastfeeding & newborn care",
+            "Authored by 10+ doctors & medical experts across 4 countries",
+            "Pre-pregnancy preparation & trimester-wise care guidance",
+            "Important scans, birthing process & postpartum recovery",
             "Simple, plain language avoiding complex medical jargon"
           ]
         }
@@ -140,7 +167,7 @@ export const content = {
     },
     footer: {
       brand: "OCEAN SCULPTURE",
-      tagline: "United for Women. United Against Cervical Cancer.",
+      tagline: "UNITED FOR WOMEN. UNITED FOR BETTER HEALTH.",
       emailLabel: "Contact Email",
       email: "sculptureocean@gmail.com",
       rights: "All rights reserved.",
@@ -169,10 +196,27 @@ export const content = {
     about: {
       sectionTag: "हमारे बारे में",
       heading: "महिलाओं के लिए एकजुट। सर्वाइकल कैंसर के खिलाफ एकजुट।",
-      p1: "ओशियन स्कल्पचर एक उद्देश्य-संचालित पहल है जो एक सरल विश्वास पर बनी है: रोकथाम हर महिला की पहुंच में होनी चाहिए।",
-      p2: "हम एक ऐसे भविष्य की दिशा में काम कर रहे हैं जहां महिलाओं को अपने स्वास्थ्य की रक्षा के लिए आवश्यक ज्ञान, अवसर और पहुंच मिले—इससे पहले कि बीमारी जानलेवा बन जाए।",
-      p3: "हमारी यात्रा सर्वाइकल कैंसर की रोकथाम और स्क्रीनिंग से शुरू होती है। सर्वाइकल कैंसर उन कुछ कैंसरों में से एक है जहां रोकथाम और शुरुआती पहचान से बड़ा बदलाव आ सकता है। फिर भी, जागरूकता की कमी, पहुंच में कठिनाई, वित्तीय बाधाएं और भ्रांतियां कई महिलाओं को समय पर जांच कराने से रोकती हैं। हम इसे बदलना चाहते हैं।",
-      p4: "हमारा उद्देश्य जागरूकता बढ़ाना, नियमित जांच को बढ़ावा देना, शुरुआती पहचान का समर्थन करना और रियायती दरों पर गुणवत्तापूर्ण सर्वाइकल कैंसर स्क्रीनिंग उपलब्ध कराना है। हम सर्वाइकल कैंसर की रोकथाम के लिए एचपीवी (HPV) टीकाकरण के महत्व पर भी दृढ़ विश्वास रखते हैं।",
+      p1: "ओशियन स्कल्पचर में, हम महिलाओं, समाज और हमारे राष्ट्र के समग्र विकास और सशक्तिकरण के लिए समर्पित हैं।",
+      p2: "हमारा दृष्टिकोण आवश्यक स्वास्थ्य सेवा को अधिक सुलभ, सस्ती और समावेशी बनाकर एक स्वस्थ और मजबूत समाज में योगदान देना है।",
+      p3: "हमें सशक्त फाउंडेशन के सहयोग से अपनी पहली परियोजना की घोषणा करते हुए गर्व हो रहा है, जिसका उद्देश्य महिलाओं के लिए सर्वाइकल कैंसर स्क्रीनिंग को अधिक सुलभ बनाना है। इस पहल के माध्यम से, हमारा लक्ष्य परीक्षण की लागत को कम करना और स्क्रीनिंग को अधिक किफायती और आसानी से सुलभ बनाना है, विशेष रूप से उन महिलाओं के लिए जो निवारक स्वास्थ्य सेवा में बाधाओं का सामना करती हैं।",
+      p4: "यह पहली परियोजना महिला सशक्तिकरण, सामुदायिक कल्याण और सामाजिक विकास की दिशा में हमारी यात्रा में एक महत्वपूर्ण कदम है। ओशियन स्कल्पचर में, हमारा मानना है कि महिलाओं के स्वास्थ्य में निवेश करना राष्ट्र के विकास, प्रगति और सशक्तिकरण में निवेश है।",
+
+      pillarsTag: "हमारे तीन स्तंभ",
+      pillarsHeading: "हमारा दृष्टिकोण तीन मुख्य स्तंभों पर आधारित है:",
+      pillars: [
+        {
+          title: "जागरूकता और शिक्षा",
+          desc: "जागरूकता पैदा करना, ज्ञान साझा करना और व्यक्तियों को सूचित निर्णय लेने के लिए सशक्त बनाना।"
+        },
+        {
+          title: "रोकथाम और प्रारंभिक कार्रवाई",
+          desc: "निवारक दृष्टिकोण को बढ़ावा देना और समस्याओं के जानलेवा या कठिन होने से पहले समय पर कार्रवाई को प्रोत्साहित करना।"
+        },
+        {
+          title: "सुलभता और सामर्थ्य",
+          desc: "गुणवत्तापूर्ण सेवाओं, अवसरों और समाधानों को समाज के लिए अधिक सुलभ और किफायती बनाने की दिशा में काम करना।"
+        }
+      ],
       
       collabTag: "सहयोग के माध्यम से सुलभता",
       collabTitle: "सशक्त फाउंडेशन (Sashakti Foundation) के साथ सहयोग",
@@ -185,19 +229,23 @@ export const content = {
         "यह रोकथाम को संभव बनाने के बारे में है।"
       ],
 
+      impactTag: "हमारा प्रभाव और दृष्टिकोण",
+      impactP1: "महिला स्वास्थ्य और सर्वाइकल कैंसर रोकथाम में हमारे कार्य सहित हमारी पहलों के माध्यम से, ओशियन स्कल्पचर का लक्ष्य साझेदारी बनाना, नवाचार का समर्थन करना और टिकाऊ समाधान तैयार करना है जो समाज और राष्ट्र की भलाई, सशक्तिकरण, वृद्धि और विकास में योगदान करते हैं।",
+      impactP2: "हमारा दृष्टिकोण सरल है: अधिक स्वस्थ, सशक्त और अधिक समावेशी कल के लिए आज सार्थक प्रभाव पैदा करना।",
+
       promiseTag: "हमारा वादा",
       promiseTitle: "समय पर जांच करें। जल्दी पहचान करें। सर्वाइकल कैंसर रोकें।",
       promiseDesc: "क्योंकि किसी भी महिला को ऐसी बीमारी से अपनी जान नहीं गंवानी चाहिए जिसे रोका जा सकता है या जिसका समय पर पता लगाया जा सकता है।"
     },
     inspiration: {
       sectionTag: "हमारी प्रेरणा",
-      heading: "जिनसे हमने सीखा उनसे प्रेरित। जिनकी हम सेवा करते हैं उनके द्वारा संचालित।",
-      p1: "हर सार्थक यात्रा किसी ऐसे व्यक्ति से शुरू होती है जो हमें प्रेरित करता है। ओशियन स्कल्पचर में हमारे लिए वह प्रेरणा हमारे शिक्षकों, सलाहकारों और नैदानिक पर्यवेक्षकों (clinical supervisors) से मिलती है—जिन्होंने हमें न केवल चिकित्सा का विज्ञान सिखाया, बल्कि हर मरीज को सुनने, सीखने, सवाल करने और उनकी देखभाल करने का महत्व भी सिखाया।",
-      p2: "सर्वाइकल कैंसर स्क्रीनिंग की हमारी समझ इन अनुभवों से आकार लेती है। हमारे नैदानिक सीखने के दौरान, हमने महसूस किया कि महिला के सर्वाइकल स्वास्थ्य इतिहास, जोखिम कारकों, स्क्रीनिंग आवश्यकताओं और निवारक देखभाल तक पहुंच को समझना कितना महत्वपूर्ण है। स्क्रीनिंग का एक सरल निर्णय महिला के जीवन पर गहरा प्रभाव डाल सकता है।",
-      p3: "हमने अपने आसपास एक बहुत बड़ा अंतर भी देखा। चाहे ग्रामीण समुदाय हों या शहरी, कई महिलाओं को अभी भी सर्वाइकल कैंसर, इसकी रोकथाम, स्क्रीनिंग और शुरुआती पहचान के महत्व की सीमित समझ है। जागरूकता में यह अंतर हमारे लिए केवल एक अवलोकन नहीं रहा—यह कार्य करने का एक कारण बन गया।",
-      p4: "हमारी सबसे बड़ी प्रेरणाओं में से एक हमारी नैदानिक पर्यवेक्षक रही हैं, जिनकी शिक्षा और प्रतिबद्धता ने हमें बीमारी से परे देखने और मरीज के पीछे के व्यक्ति को समझने का महत्व दिखाया। उनके मार्गदर्शन ने हमें अलग सोचने और कुछ ऐसा बनाने की दिशा में काम करने का आत्मविश्वास और प्रेरणा दी जो एक सार्थक बदलाव ला सके।",
-      p5: "हम उन लोगों से भी समान रूप से प्रेरित हैं जिन्होंने महिला स्वास्थ्य सेवा और सर्वाइकल कैंसर की रोकथाम के लिए अपने जीवन के दशक समर्पित कर दिए हैं। ऐसे शिक्षकों और स्वास्थ्य सेवा पेशेवरों को देखना जो चिकित्सा में दशकों के बाद भी समर्पण के साथ काम करना जारी रखते हैं, हमें याद दिलाता है कि सार्थक बदलाव के लिए दृढ़ता, नम्रता और निरंतर सीखने की आवश्यकता होती है।",
-      p6: "उनकी यात्रा हमें याद दिलाती है कि हमें रातों-रात दुनिया बदलने की जरूरत नहीं है। हमें बस आगे बढ़ते रहना है, सीखते रहना है और जो हम कर सकते हैं वह करते रहना है। यही ओशियन स्कल्पचर के पीछे की भावना है।",
+      heading: "ओशियन स्कल्पचर के पीछे की प्रेरणा",
+      p1: "हर सार्थक यात्रा एक विचार से शुरू होती है—अपना सर्वश्रेष्ठ देने, दूसरों की सेवा करने और खुद से बड़ी किसी चीज़ में योगदान देने का विचार।",
+      p2: "ओशियन स्कल्पचर का जन्म इसी सरल लेकिन शक्तिशाली विश्वास से हुआ है: कि हमारे ज्ञान, कौशल, संसाधनों और प्रयासों का उपयोग लोगों और समाज के लिए सार्थक मूल्य बनाने के लिए किया जाना चाहिए। हमारी प्रेरणा उन व्यक्तियों से मिलती है जिन्होंने हमारा मार्गदर्शन किया है, उन अनुभवों से जो हमें आकार देते हैं, और रोजमर्रा की चुनौतियों से जो हमें बेहतर करने की आवश्यकता की याद दिलाती हैं।",
+      p3: "हमारा मानना है कि प्रगति नवाचार, जिम्मेदारी, करुणा, सहयोग और निरंतर सीखने के माध्यम से पैदा होती है। हमारा उद्देश्य एक क्षेत्र या काम के एक क्षेत्र तक सीमित नहीं है। हम ऐसी पहलों की खोज और समर्थन करने की आकांक्षा रखते हैं जो स्वास्थ्य, शिक्षा, प्रौद्योगिकी, सामाजिक विकास, सुलभता और मानव कल्याण में योगदान करती हैं।",
+      p4: "हमारी यात्रा व्यक्ति से समुदाय तक, और समुदाय से राष्ट्र तक सेवा करने की प्रतिबद्धता से निर्देशित है। हमारा मानना है कि जब छोटे, सार्थक प्रयास भी ईमानदारी और दीर्घकालिक दृष्टिकोण से प्रेरित होते हैं, तो वे एक बड़ा प्रभाव पैदा कर सकते हैं।",
+      p5: "ओशियन स्कल्पचर में, हम अपना सर्वश्रेष्ठ देने, अवसर पैदा करने, सार्थक समाधानों का समर्थन करने और समाज और राष्ट्र के विकास, सशक्तिकरण और प्रगति में योगदान देने के लिए प्रतिबद्ध हैं।",
+      p6: "हमारी प्रेरणा सरल है: उद्देश्य के साथ सेवा करना, जिम्मेदारी के साथ निर्माण करना और एक बेहतर कल के निर्माण के लिए प्रतिबद्ध रहना।",
       
       quote: [
         "हमारे शिक्षकों ने हमें ज्ञान दिया।",
@@ -217,37 +265,43 @@ export const content = {
       initiatives: [
         {
           num: "01",
-          title: "निःशुल्क एवं रियायती सर्वाइकल कैंसर स्क्रीनिंग",
+          title: "सर्वाइकल कैंसर प्रयोगशाला परीक्षण",
           badge: "सशक्त फाउंडेशन सहयोग",
-          description: "हमारी पहली पहल सशक्त फाउंडेशन के साथ हमारा सहयोग है, जो महिलाओं के कल्याण और सशक्तिकरण के लिए काम करने वाला संगठन है। साथ मिलकर, हम सशक्त फाउंडेशन द्वारा मुफ्त ओपीडी परामर्श और मुफ्त सर्वाइकल कैंसर स्क्रीनिंग सेवाएं शुरू करके सर्वाइकल कैंसर स्क्रीनिंग तक पहुंच में सुधार की दिशा में एक सार्थक कदम उठा रहे हैं।",
-          subdesc: "इस पहल के साथ, ओशियन स्कल्पचर का उद्देश्य रियायती दरों पर सर्वाइकल कैंसर की स्क्रीनिंग उपलब्ध कराना है, जिसका लक्ष्य स्क्रीनिंग से जुड़े वित्तीय बोझ को कम करना और अधिक महिलाओं को समय पर निवारक स्वास्थ्य देखभाल कराने के लिए प्रोत्साहित करना है। हमारा मानना है कि स्क्रीनिंग की लागत कभी भी किसी महिला के लिए अपने स्वास्थ्य की रक्षा में देरी करने या टालने का कारण नहीं बननी चाहिए।"
+          description: "हमारी पहली पहल ओशियन स्कल्पचर और सशक्त फाउंडेशन के बीच सर्वाइकल कैंसर प्रयोगशाला परीक्षण को अधिक सुलभ और किफायती बनाने का एक सहयोग है।",
+          subdesc: "इस सहयोग के माध्यम से, सशक्त फाउंडेशन मुफ्त सर्वाइकल कैंसर स्क्रीनिंग ओपीडी परामर्श प्रदान करता है, जबकि ओशियन स्कल्पचर रियायती दरों पर उच्च गुणवत्ता वाले प्रयोगशाला परीक्षण तक पहुंच का समर्थन करता है।",
+          extra: "हमारा साझा उद्देश्य स्क्रीनिंग में वित्तीय बाधाओं को कम करना और अधिक महिलाओं को समय पर निवारक देखभाल लेने के लिए प्रोत्साहित करना है।",
+          tagline: "क्योंकि सामर्थ्य को कभी भी शुरुआती पहचान और रोकथाम के रास्ते में नहीं आना चाहिए।"
         },
         {
           num: "02",
-          title: "सर्वाइकल कैंसर टीकाकरण जागरूकता",
+          title: "सर्वाइकल कैंसर टीकाकरण और जागरूकता",
           badge: "एचपीवी रोकथाम",
-          description: "हमारा दूसरा कार्य क्षेत्र सर्वाइकल कैंसर टीकाकरण जागरूकता है। रोकथाम केवल स्क्रीनिंग से शुरू नहीं होती। हमारा उद्देश्य व्यक्तियों, परिवारों और समुदायों के बीच एचपीवी (HPV) टीकाकरण के महत्व और सर्वाइकल कैंसर की रोकथाम में इसकी भूमिका के बारे में अधिक जागरूकता पैदा करना है।",
-          subdesc: "शिक्षा और जागरूकता पहलों के माध्यम से, हम भ्रांतियों को दूर करने, समझ में सुधार करने और लोगों को टीकाकरण और निवारक स्वास्थ्य के बारे में सूचित निर्णय लेने के लिए प्रोत्साहित करने की उम्मीद करते हैं।"
+          description: "रोकथाम बीमारी विकसित होने से पहले शुरू होती है। हमारा काम का दूसरा क्षेत्र एचपीवी टीकाकरण और जागरूकता पर केंद्रित है, जो सर्वाइकल कैंसर की रोकथाम का एक महत्वपूर्ण हिस्सा है।",
+          subdesc: "ओशियन स्कल्पचर टीकाकरण केंद्रों और सशक्त फाउंडेशन ओपीडी के माध्यम से उपलब्ध टीकाकरण सेवाओं के माध्यम से, हमारा लक्ष्य एचपीवी टीकाकरण को अधिक सुलभ बनाना और व्यक्तियों, परिवारों और समुदायों के बीच जागरूकता पैदा करना है।",
+          extra: "टीकाकरण के साथ-साथ, हम भ्रांतियों को दूर करने और स्पष्ट, साक्ष्य-आधारित जानकारी प्रदान करने के लिए काम करते हैं ताकि लोग टीकाकरण और निवारक स्वास्थ्य के बारे में सूचित निर्णय ले सकें।",
+          tagline: "टीकाकरण करें। शिक्षित करें। रोकें। रक्षा करें।"
         },
         {
           num: "03",
-          title: "डिजिटल स्वास्थ्य और सुलभ तकनीक",
+          title: "डिजिटल स्वास्थ्य और सुलभ स्वास्थ्य सेवा प्रौद्योगिकी",
           badge: "हेल्थकेयर ऐप",
-          description: "हमारा तीसरा कार्य क्षेत्र डिजिटल स्वास्थ्य और सुलभ स्वास्थ्य तकनीक है। हमने एक स्वास्थ्य एप्लिकेशन विकसित किया है जो स्वास्थ्य सेवा के कई पहलुओं को एक सुलभ मंच पर एक साथ लाने के लिए डिज़ाइन किया गया है।",
-          subdesc: "इस एप्लिकेशन की परिकल्पना गर्भवती और गैर-गर्भवती दोनों व्यक्तियों का समर्थन करने के लिए की गई है, जिसमें व्यक्तिगत आहार चार्ट और स्वास्थ्य मार्गदर्शन शामिल है। इसे कई पारंपरिक व्यक्तिगत सेवाओं की तुलना में बहुत अधिक किफायती लागत पर उपलब्ध कराने के लिए डिज़ाइन किया गया है। हमारा उद्देश्य प्रौद्योगिकी का उपयोग केवल जानकारी प्रदान करने के लिए नहीं, बल्कि दैनिक जीवन में लोगों के लिए विश्वसनीय स्वास्थ्य मार्गदर्शन को अधिक सुलभ बनाना है।"
+          description: "ओशियन स्कल्पचर हेल्थ एप्लिकेशन के माध्यम से, हमारा लक्ष्य विश्वसनीय और किफायती स्वास्थ्य मार्गदर्शन को आसानी से सुलभ बनाना है।",
+          subdesc: "ऐप व्यक्तिगत आहार चार्ट और विभिन्न क्षेत्रों में स्वास्थ्य मार्गदर्शन प्रदान करता है, जिसमें गर्भावस्था और महिला स्वास्थ्य पर विशेष ध्यान दिया जाता है—महिलाओं को सूचित विकल्प चुनने में मदद मिलती है और एक स्वस्थ गर्भावस्था यात्रा का समर्थन होता है।",
+          tagline: "बेहतर स्वास्थ्य के लिए तकनीक। हर चरण के लिए मार्गदर्शन।"
         },
         {
           num: "04",
-          title: "सुलभ साहित्य के माध्यम से स्वास्थ्य शिक्षा",
-          badge: "डॉ. आशीष सिंह द्वारा विशेष पुस्तक",
+          title: "गर्भावस्था पुस्तक: विचार से जन्म तक",
+          badge: "10+ वैश्विक डॉक्टरों द्वारा विशेष प्रकाशन",
           isFeatured: true,
-          description: "हमारा चौथा कार्य क्षेत्र सुलभ चिकित्सा साहित्य के माध्यम से स्वास्थ्य शिक्षा है। ओशियन स्कल्पचर के संस्थापकों में से एक, डॉ. आशीष सिंह ने विशेष रूप से उन महिलाओं के लिए एक पुस्तक लिखी है जो गर्भवती हैं या गर्भावस्था की योजना बना रही हैं, जिसका उद्देश्य गर्भावस्था से संबंधित जानकारी को समझना आसान बनाना है।",
-          subdesc: "यह पुस्तक गर्भावस्था पूर्व से लेकर गर्भावस्था, प्रसव, स्तनपान और नवजात शिशु की देखभाल तक की एक व्यापक यात्रा प्रदान करती है। यह जटिल चिकित्सा शब्दावली के बजाय सरल, समझने योग्य भाषा में सामान्य प्रश्नों और चिंताओं को संबोधित करती है ताकि महिलाओं और परिवारों को सूचित, आत्मविश्वासी और तैयार महसूस करने में मदद मिल सके।",
+          description: "चार अलग-अलग देशों के 10 से अधिक डॉक्टरों और चिकित्सा विशेषज्ञों द्वारा लिखित, 'फ्रॉम द थॉट ऑफ कंसेप्शन टू बर्थ: द जर्नी ऑफ ए मदर एंड ए बेबी' गर्भावस्था यात्रा के दौरान महिलाओं और परिवारों का समर्थन करने के लिए बनाई गई एक संपूर्ण, मरीज-अनुकूल गर्भावस्था मार्गदर्शिका है।",
+          subdesc: "पुस्तक में पूर्व-गर्भावस्था की तैयारी, पहली से तीसरी तिमाही की देखभाल, महत्वपूर्ण स्कैन और जांच, प्रसव, प्रसवोत्तर रिकवरी, स्तनपान और नवजात शिशु की देखभाल को सरल और समझने में आसान भाषा में समझाया गया है।",
+          extra: "हमारा उद्देश्य विश्वसनीय चिकित्सा ज्ञान को सुलभ, व्यावहारिक और आश्वस्त करने वाला बनाना है, जिससे हर माँ को गर्भधारण के विचार से लेकर अपने बच्चे के जन्म तक सूचित, आश्वस्त और तैयार महसूस करने में मदद मिले।",
           highlights: [
-            "गर्भावस्था पूर्व की तैयारी और अनुशंसित स्कैन",
-            "गर्भावस्था के चरण, प्रसव प्रक्रिया और शिशु जन्म",
-            "प्रसवोत्तर, स्तनपान और नवजात शिशु की देखभाल",
-            "जटिल चिकित्सा शब्दावली से मुक्त सरल एवं सुलभ भाषा"
+            "4 देशों के 10+ डॉक्टरों और चिकित्सा विशेषज्ञों द्वारा लिखित",
+            "पूर्व-गर्भावस्था की तैयारी और तिमाही-वार देखभाल",
+            "महत्वपूर्ण स्कैन, जांच, प्रसव और प्रसवोत्तर देखभाल",
+            "सरल और मरीज-अनुकूल भाषा"
           ]
         }
       ],

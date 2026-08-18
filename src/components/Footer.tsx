@@ -1,6 +1,7 @@
 import { useLanguage } from "../context/LanguageContext";
 import { content } from "../data/translations";
 import { Mail, Heart } from "lucide-react";
+import { renderWithSashaktiLink } from "./SashaktiLink";
 
 export function Footer() {
   const { language } = useLanguage();
@@ -27,7 +28,7 @@ export function Footer() {
               {t.tagline}
             </p>
             <p className="text-xs font-sans text-brand-gray">
-              {t.sashaktiNote}
+              {renderWithSashaktiLink(t.sashaktiNote, "text-rose-700 hover:text-rose-800 underline font-medium transition-colors inline-flex items-center gap-1")}
             </p>
           </div>
 

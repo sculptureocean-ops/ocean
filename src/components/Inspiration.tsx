@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "../context/LanguageContext";
 import { content } from "../data/translations";
-import { Sparkles, Quote, Stethoscope, Compass } from "lucide-react";
+import { Sparkles, Quote, Compass } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,25 +56,23 @@ export function Inspiration() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           
           <div className="insp-fade-up space-y-6 text-base md:text-lg font-serif text-brand-gray leading-relaxed">
-            <p className="font-sans font-medium text-brand-text text-lg">
+            <p className="font-sans font-medium text-brand-text text-lg border-l-4 border-rose-600 pl-4 py-1">
               {t.p1}
             </p>
-            <p>{t.p2}</p>
-            <p>{t.p3}</p>
+            {t.p2 && <p>{t.p2}</p>}
+            {t.p3 && <p>{t.p3}</p>}
           </div>
 
           <div className="insp-fade-up space-y-6 text-base md:text-lg font-serif text-brand-gray leading-relaxed">
-            <div className="p-6 bg-white rounded-2xl border border-brand-border/60 shadow-xs space-y-3">
-              <div className="flex items-center space-x-2 text-xs font-sans font-bold text-rose-700 uppercase tracking-wider">
-                <Stethoscope className="w-4 h-4" />
-                <span>Clinical Supervisor Guidance</span>
+            {t.p4 && <p>{t.p4}</p>}
+            {t.p5 && <p>{t.p5}</p>}
+            {t.p6 && (
+              <div className="p-6 bg-white rounded-2xl border border-brand-border/60 shadow-xs border-l-4 border-l-rose-600 space-y-2">
+                <p className="font-sans font-bold text-brand-text text-base md:text-lg">
+                  "{t.p6}"
+                </p>
               </div>
-              <p className="text-base text-brand-text font-serif italic">
-                {t.p4}
-              </p>
-            </div>
-            <p>{t.p5}</p>
-            <p>{t.p6}</p>
+            )}
           </div>
 
         </div>

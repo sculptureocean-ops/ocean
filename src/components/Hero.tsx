@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useLanguage } from "../context/LanguageContext";
 import { content } from "../data/translations";
+import { ExternalLink } from "lucide-react";
+import { SASHAKTI_URL } from "./SashaktiLink";
 
 export function Hero() {
   const { language, setLanguage } = useLanguage();
@@ -91,17 +93,29 @@ export function Hero() {
       {/* Collaboration Banner Image (Replacing 3 photos) */}
       <div 
         ref={bannerRef}
-        className="w-full max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl border border-brand-border/60 bg-white p-3 md:p-6 transition-all hover:shadow-2xl"
+        className="w-full max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl border border-brand-border/60 bg-white p-3 md:p-6 transition-all hover:shadow-2xl flex flex-col items-center gap-2"
       >
-        <img 
-          src="/sashakti-ocean-sculpture-collaboration.png" 
-          alt={t.bannerAlt}
-          loading="eager"
-          decoding="async"
-          width="1200"
-          height="675"
-          className="w-full h-auto object-contain rounded-lg"
-        />
+        <a 
+          href={SASHAKTI_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Visit Sashakti Foundation Official Website (opens in new tab)"
+          className="group relative block w-full overflow-hidden rounded-lg"
+        >
+          <img 
+            src="/sashakti-ocean-sculpture-collaboration.png" 
+            alt={t.bannerAlt}
+            loading="eager"
+            decoding="async"
+            width="1200"
+            height="675"
+            className="w-full h-auto object-contain rounded-lg transition-transform duration-300 group-hover:scale-[1.01]"
+          />
+          <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white text-xs font-sans font-medium px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity flex items-center space-x-1.5">
+            <span>Visit Sashakti Foundation</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </div>
+        </a>
       </div>
     </section>
   );

@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "../context/LanguageContext";
 import { content } from "../data/translations";
 import { Briefcase, Syringe, Smartphone, BookOpen, HeartPulse, Mail, CheckCircle2, Sparkles } from "lucide-react";
+import { renderWithSashaktiLink } from "./SashaktiLink";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -94,7 +95,7 @@ export function OurWork() {
                         ? "bg-purple-100 text-purple-900 border-purple-200" 
                         : "bg-white text-brand-text border-brand-border/60"
                     }`}>
-                      {item.badge}
+                      {renderWithSashaktiLink(item.badge, "text-brand-text hover:text-rose-600 underline font-bold transition-colors inline-flex items-center gap-0.5", false)}
                     </span>
                   </div>
 
@@ -110,12 +111,28 @@ export function OurWork() {
                   </div>
 
                   <p className="text-base font-serif text-brand-gray leading-relaxed">
-                    {item.description}
+                    {renderWithSashaktiLink(item.description)}
                   </p>
 
-                  <p className="text-sm font-serif text-brand-gray/90 leading-relaxed border-t border-brand-border/40 pt-4">
-                    {item.subdesc}
-                  </p>
+                  {'subdesc' in item && item.subdesc && (
+                    <p className="text-sm font-serif text-brand-gray/90 leading-relaxed border-t border-brand-border/40 pt-4">
+                      {renderWithSashaktiLink(item.subdesc)}
+                    </p>
+                  )}
+
+                  {'extra' in item && item.extra && (
+                    <p className="text-sm font-serif text-brand-gray/90 leading-relaxed pt-2">
+                      {renderWithSashaktiLink(item.extra)}
+                    </p>
+                  )}
+
+                  {'tagline' in item && item.tagline && (
+                    <div className="pt-3 border-t border-brand-border/30">
+                      <p className="text-xs font-sans font-bold text-rose-700 italic">
+                        "{item.tagline}"
+                      </p>
+                    </div>
+                  )}
 
                   {/* Highlighted Book Features List */}
                   {'highlights' in item && Array.isArray(item.highlights) && (
