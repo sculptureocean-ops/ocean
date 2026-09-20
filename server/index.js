@@ -25,6 +25,42 @@ const DB_FILE = isVercel
   ? path.join('/tmp', 'db.json')
   : SEED_FILE;
 
+const INITIAL_SEED = {
+  appointments: [
+    {
+      id: "apt-demo-1001",
+      uhid: "OS-UHID-78210",
+      tokenNumber: "OS-01",
+      personalDetails: {
+        name: "Sunita Devi",
+        age: 36,
+        sex: "Female",
+        mobile: "9876543210",
+        email: "sunita.devi@example.com",
+        address: "42, Shanti Nagar, Sector 4",
+        stateDistrict: "Delhi / South West",
+        idType: "ABHA",
+        idNumber: "14-5542-8901-2311",
+        maritalStatus: "Married",
+        occupation: "Teacher"
+      },
+      bookingDetails: {
+        appointmentDate: "2026-09-24",
+        timeSlot: "10:30 AM",
+        preferredDoctor: "Dr. Rashmi Upadhyay (AIIMS New Delhi)",
+        facility: "Ocean Sculpture Women's Health Clinic",
+        initialReason: "Routine Cervical Cancer Screening"
+      },
+      consentGiven: true,
+      consentTimestamp: "2026-09-20T10:15:00.000Z",
+      status: "Scheduled",
+      createdAt: "2026-09-20T10:15:00.000Z"
+    }
+  ],
+  clinicalRecords: [],
+  otps: {}
+};
+
 let memoryDb = null;
 
 function readDb() {
@@ -44,18 +80,25 @@ function readDb() {
       writeDb(memoryDb);
       return memoryDb;
     }
-    const initial = { appointments: [], clinicalRecords: [], otps: {} };
-    writeDb(initial);
-    memoryDb = initial;
-    return initial;
+    memoryDb = INITIAL_SEED;
+    writeDb(INITIAL_SEED);
+    return memoryDb;
   } catch (err) {
     console.error('Error reading db.json:', err);
     if (!memoryDb) {
-      memoryDb = { appointments: [], clinicalRecords: [], otps: {} };
+      memoryDb = INITIAL_SEED;
     }
     return memoryDb;
   }
 }
+
+// URL Normalization: handle both /api/path and /path on Vercel
+app.use((req, res, next) => {
+  if (!req.url.startsWith('/api')) {
+    req.url = '/api' + req.url;
+  }
+  next();
+});
 
 function writeDb(data) {
   try {
