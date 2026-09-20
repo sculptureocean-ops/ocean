@@ -1,0 +1,269 @@
+{
+  "appointments": [
+    {
+      "id": "APT-1789909694889-4",
+      "uhid": "OS-UHID-40023",
+      "tokenNumber": "OS-04",
+      "personalDetails": {
+        "name": "ee",
+        "age": 45,
+        "sex": "Female",
+        "mobile": "8881364909",
+        "email": "singhsourya137@gmail.com",
+        "address": "dddd",
+        "stateDistrict": "uttarpradesh",
+        "idType": "ABHA",
+        "idNumber": "",
+        "maritalStatus": "Married",
+        "occupation": "sddd"
+      },
+      "bookingDetails": {
+        "appointmentDate": "2026-09-21",
+        "timeSlot": "10:00 AM",
+        "preferredDoctor": "Dr. Rashmi Upadhyay (Radiation Oncologist, AIIMS New Delhi)",
+        "facility": "Ocean Sculpture Women's Health & Screening Center",
+        "initialReason": "Routine Cervical Cancer Screening"
+      },
+      "consentGiven": true,
+      "consentTimestamp": "2026-09-20T13:08:14.889Z",
+      "status": "Scheduled",
+      "createdAt": "2026-09-20T13:08:14.890Z"
+    },
+    {
+      "id": "APT-1789909657875-3",
+      "uhid": "OS-UHID-63972",
+      "tokenNumber": "OS-03",
+      "personalDetails": {
+        "name": "Ananya Sen",
+        "age": 29,
+        "sex": "Female",
+        "mobile": "8881364909",
+        "email": "ananya.sen@example.com",
+        "address": "Flat 302, Green Glen Layout",
+        "stateDistrict": "Karnataka / Bangalore Urban",
+        "idType": "Aadhaar",
+        "idNumber": "XXXX-XXXX-9901",
+        "maritalStatus": "Unmarried",
+        "occupation": "Financial Analyst"
+      },
+      "bookingDetails": {
+        "appointmentDate": "2026-09-25",
+        "timeSlot": "10:00 AM",
+        "preferredDoctor": "Dr. Rashmi Upadhyay (AIIMS New Delhi)",
+        "facility": "Ocean Sculpture Women's Health Clinic",
+        "initialReason": "Routine Cervical Cancer Screening"
+      },
+      "consentGiven": true,
+      "consentTimestamp": "2026-09-20T13:07:37.875Z",
+      "status": "Scheduled",
+      "createdAt": "2026-09-20T13:07:37.877Z"
+    },
+    {
+      "id": "APT-1789909379428-2",
+      "uhid": "OS-UHID-10910",
+      "tokenNumber": "OS-02",
+      "personalDetails": {
+        "name": "Pooja Verma",
+        "age": 34,
+        "sex": "Female",
+        "mobile": "9811223344",
+        "email": "pooja.verma@example.com",
+        "address": "Block C, Vasant Kunj",
+        "stateDistrict": "Delhi / South",
+        "idType": "ABHA",
+        "idNumber": "14-8899-2233-1100",
+        "maritalStatus": "Married",
+        "occupation": "Software Engineer"
+      },
+      "bookingDetails": {
+        "appointmentDate": "2026-09-24",
+        "timeSlot": "11:30 AM",
+        "preferredDoctor": "Dr. Rashmi Upadhyay (AIIMS New Delhi)",
+        "facility": "Ocean Sculpture Women's Health Clinic",
+        "initialReason": "Routine Cervical Cancer Screening & White discharge"
+      },
+      "consentGiven": true,
+      "consentTimestamp": "2026-09-20T13:02:59.428Z",
+      "status": "Completed",
+      "createdAt": "2026-09-20T13:02:59.428Z",
+      "clinicalRecordId": "CR-1789909379453-1"
+    },
+    {
+      "id": "apt-demo-1001",
+      "uhid": "OS-UHID-78210",
+      "tokenNumber": "A-01",
+      "personalDetails": {
+        "name": "Sunita Devi",
+        "age": 36,
+        "sex": "Female",
+        "mobile": "9876543210",
+        "email": "sunita.devi@example.com",
+        "address": "42, Shanti Nagar, Sector 4",
+        "stateDistrict": "Delhi / South West",
+        "idType": "ABHA Number",
+        "idNumber": "14-5542-8901-2311",
+        "maritalStatus": "Married",
+        "occupation": "Teacher"
+      },
+      "bookingDetails": {
+        "appointmentDate": "2026-09-22",
+        "timeSlot": "10:30 AM",
+        "preferredDoctor": "Dr. Rashmi Upadhyay (AIIMS New Delhi)",
+        "facility": "Ocean Sculpture Women's Health Clinic",
+        "initialReason": "Routine Cervical Cancer Screening & White discharge"
+      },
+      "consentGiven": true,
+      "consentTimestamp": "2026-09-20T10:15:00.000Z",
+      "status": "Scheduled",
+      "createdAt": "2026-09-20T10:15:00.000Z"
+    }
+  ],
+  "clinicalRecords": [
+    {
+      "id": "CR-1789909379453-1",
+      "appointmentId": "APT-1789909379428-2",
+      "patientDetails": {
+        "name": "Pooja Verma",
+        "age": 34,
+        "sex": "Female",
+        "mobile": "9811223344",
+        "address": "Block C, Vasant Kunj",
+        "stateDistrict": "Delhi / South",
+        "idType": "ABHA",
+        "idNumber": "14-8899-2233-1100",
+        "maritalStatus": "Married",
+        "occupation": "Software Engineer"
+      },
+      "chiefComplaints": [
+        "Routine Cervical Cancer Screening",
+        "White discharge",
+        "Bleeding after intercourse"
+      ],
+      "otherChiefComplaint": "",
+      "redFlags": {
+        "postcoitalBleeding": true,
+        "postmenopausalBleeding": false,
+        "intermenstrualBleeding": false,
+        "foulSmellingDischarge": false,
+        "pelvicPain": false,
+        "unexplainedWeightLoss": false,
+        "contactBleeding": true,
+        "visibleCervicalGrowth": false,
+        "enlargedLymphNodes": false
+      },
+      "isRedFlagPositive": true,
+      "menstrualHistory": {
+        "ageAtFirstPeriod": 13,
+        "lastMenstrualPeriod": "2026-09-10",
+        "cycle": "Regular",
+        "flow": "Moderate",
+        "painfulPeriods": "No",
+        "postmenopausal": "No"
+      },
+      "obstetricHistory": {
+        "liveBirths": 1,
+        "normalDelivery": 1,
+        "cesarean": 0,
+        "miscarriages": 0,
+        "currentPregnancy": "No"
+      },
+      "sexualHistory": {
+        "lifetimePartners": 1,
+        "singlePartner": "Yes",
+        "condomUse": "Yes",
+        "stis": {
+          "hiv": "No",
+          "hpv": "No"
+        }
+      },
+      "contraceptiveHistory": {},
+      "riskFactors": {},
+      "hpvVaccination": {},
+      "previousScreening": {},
+      "medicalHistory": {},
+      "surgicalHistory": {},
+      "familyHistory": {},
+      "consentDigital": false,
+      "externalGenitalia": {
+        "normal": true
+      },
+      "perSpeculum": {
+        "vaginalWalls": "Healthy",
+        "cervixVisibility": "Fully visualized",
+        "vaginalDischarge": "White",
+        "amountOfDischarge": "Scanty",
+        "cervixAppearance": [
+          "Contact bleeding",
+          "Acetowhite lesion"
+        ],
+        "cervicalOs": "Multiparous",
+        "cervicalMotionTenderness": "Absent"
+      },
+      "perVaginal": {},
+      "modalities": {},
+      "report": {
+        "squamous": "LSIL",
+        "glandular": "Negative",
+        "hpvResult": "Positive",
+        "hpvGenotyping": "HPV 16"
+      },
+      "management1": {
+        "followUpChoices": [
+          "Repeat HPV DNA/ LBC in 12 months",
+          "Colposcopy directed biopsy"
+        ]
+      },
+      "management2": {
+        "viaPerformed": "Yes",
+        "viaResult": "VIA Positive",
+        "acetowhiteLesion": "Dense aceto-white lesion",
+        "transformationZone": "TZ1 – Fully visible",
+        "lesionSize": "<25% of the cervix",
+        "autoRecommendation": "Cryotherapy or Thermal Ablation (screen-and-treat approach where appropriate)"
+      },
+      "management3": {},
+      "management4": {
+        "examinationStatus": "Adequate",
+        "scj": "Completely Visible",
+        "transformationZone": "TZ1",
+        "swedeScore": {
+          "acetowhitening": 2,
+          "marginsSurface": 1,
+          "vessels": 1,
+          "lesionSize": 1,
+          "iodineUptake": 1,
+          "totalScore": 6,
+          "riskInterpretation": "Moderate risk (5-7)"
+        },
+        "biopsy": {
+          "taken": "Yes",
+          "numberOfBiopsies": "1"
+        },
+        "impression": "Low-grade Lesion (LSIL)"
+      },
+      "management5": {
+        "punchBiopsyResult": "CIN 1 confirmed on colposcopy biopsy"
+      },
+      "doctorNotes": "Patient counseled regarding HPV 16 positivity and CIN 1. Advised conservative surveillance with repeat co-testing at 12 months.",
+      "doctorName": "Dr. Rashmi Upadhyay (AIIMS New Delhi)",
+      "createdAt": "2026-09-20T13:02:59.454Z"
+    }
+  ],
+  "otps": {
+    "9876543210": {
+      "otp": "258809",
+      "expiresAt": 1789909394896,
+      "verified": false
+    },
+    "8881364909": {
+      "otp": "240633",
+      "expiresAt": 1789910175596,
+      "verified": false
+    },
+    "9811223344": {
+      "otp": "217754",
+      "expiresAt": 1789909979370,
+      "verified": true
+    }
+  }
+}
